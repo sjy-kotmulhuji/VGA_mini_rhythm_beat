@@ -1,0 +1,793 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="tb_top_game_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="glbl" />
+            <top_module name="tb_top_game" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="9087566667fs"></ZoomStartTime>
+      <ZoomEndTime time="52589166667fs"></ZoomEndTime>
+      <Cursor1Time time="45338900000fs"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="276"></NameColumnWidth>
+      <ValueColumnWidth column_width="120"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="18" />
+   <wvobject fp_name="/tb_top_game/clk" type="logic">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top_game/reset" type="logic">
+      <obj_property name="ElementShortName">reset</obj_property>
+      <obj_property name="ObjectShortName">reset</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top_game/btn" type="array">
+      <obj_property name="ElementShortName">btn[2:0]</obj_property>
+      <obj_property name="ObjectShortName">btn[2:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top_game/v_sync" type="logic">
+      <obj_property name="ElementShortName">v_sync</obj_property>
+      <obj_property name="ObjectShortName">v_sync</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top_game/w_frame_cnt" type="array">
+      <obj_property name="ElementShortName">w_frame_cnt[15:0]</obj_property>
+      <obj_property name="ObjectShortName">w_frame_cnt[15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top_game/w_note_done" type="logic">
+      <obj_property name="ElementShortName">w_note_done</obj_property>
+      <obj_property name="ObjectShortName">w_note_done</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top_game/w_rom_addr" type="array">
+      <obj_property name="ElementShortName">w_rom_addr[5:0]</obj_property>
+      <obj_property name="ObjectShortName">w_rom_addr[5:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top_game/w_lcnt0" type="array">
+      <obj_property name="ElementShortName">w_lcnt0[9:0]</obj_property>
+      <obj_property name="ObjectShortName">w_lcnt0[9:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top_game/w_pos0" type="array">
+      <obj_property name="ElementShortName">w_pos0[3:0]</obj_property>
+      <obj_property name="ObjectShortName">w_pos0[3:0]</obj_property>
+      <obj_property name="Radix">BINARYRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="group97" type="group">
+      <obj_property name="label">maincontrol</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="isExpanded"></obj_property>
+      <wvobject fp_name="/tb_top_game/DUT/U_MainController/clk" type="logic">
+         <obj_property name="ElementShortName">clk</obj_property>
+         <obj_property name="ObjectShortName">clk</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top_game/DUT/U_MainController/reset" type="logic">
+         <obj_property name="ElementShortName">reset</obj_property>
+         <obj_property name="ObjectShortName">reset</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top_game/DUT/U_MainController/btn_l_f" type="logic">
+         <obj_property name="ElementShortName">btn_l_f</obj_property>
+         <obj_property name="ObjectShortName">btn_l_f</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top_game/DUT/U_MainController/btn_r_f" type="logic">
+         <obj_property name="ElementShortName">btn_r_f</obj_property>
+         <obj_property name="ObjectShortName">btn_r_f</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top_game/DUT/U_MainController/btn_d_f" type="logic">
+         <obj_property name="ElementShortName">btn_d_f</obj_property>
+         <obj_property name="ObjectShortName">btn_d_f</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top_game/DUT/U_MainController/v_sync" type="logic">
+         <obj_property name="ElementShortName">v_sync</obj_property>
+         <obj_property name="ObjectShortName">v_sync</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top_game/DUT/U_MainController/region" type="array">
+         <obj_property name="ElementShortName">region[3:0]</obj_property>
+         <obj_property name="ObjectShortName">region[3:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top_game/DUT/U_MainController/capture_done" type="logic">
+         <obj_property name="ElementShortName">capture_done</obj_property>
+         <obj_property name="ObjectShortName">capture_done</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top_game/DUT/U_MainController/main_done" type="logic">
+         <obj_property name="ElementShortName">main_done</obj_property>
+         <obj_property name="ObjectShortName">main_done</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top_game/DUT/U_MainController/o_state" type="array">
+         <obj_property name="ElementShortName">o_state[2:0]</obj_property>
+         <obj_property name="ObjectShortName">o_state[2:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top_game/DUT/U_MainController/o_lane" type="array">
+         <obj_property name="ElementShortName">o_lane[3:0]</obj_property>
+         <obj_property name="ObjectShortName">o_lane[3:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top_game/DUT/U_MainController/o_duration" type="array">
+         <obj_property name="ElementShortName">o_duration[11:0]</obj_property>
+         <obj_property name="ObjectShortName">o_duration[11:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top_game/DUT/U_MainController/score" type="array">
+         <obj_property name="ElementShortName">score[23:0]</obj_property>
+         <obj_property name="ObjectShortName">score[23:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top_game/DUT/U_MainController/perfect" type="logic">
+         <obj_property name="ElementShortName">perfect</obj_property>
+         <obj_property name="ObjectShortName">perfect</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top_game/DUT/U_MainController/good" type="logic">
+         <obj_property name="ElementShortName">good</obj_property>
+         <obj_property name="ObjectShortName">good</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top_game/DUT/U_MainController/miss" type="logic">
+         <obj_property name="ElementShortName">miss</obj_property>
+         <obj_property name="ObjectShortName">miss</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top_game/DUT/U_MainController/combo" type="array">
+         <obj_property name="ElementShortName">combo[9:0]</obj_property>
+         <obj_property name="ObjectShortName">combo[9:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top_game/DUT/U_MainController/fever" type="logic">
+         <obj_property name="ElementShortName">fever</obj_property>
+         <obj_property name="ObjectShortName">fever</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top_game/DUT/U_MainController/o_btn_l" type="logic">
+         <obj_property name="ElementShortName">o_btn_l</obj_property>
+         <obj_property name="ObjectShortName">o_btn_l</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top_game/DUT/U_MainController/o_btn_r" type="logic">
+         <obj_property name="ElementShortName">o_btn_r</obj_property>
+         <obj_property name="ObjectShortName">o_btn_r</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top_game/DUT/U_MainController/o_btn_d" type="logic">
+         <obj_property name="ElementShortName">o_btn_d</obj_property>
+         <obj_property name="ObjectShortName">o_btn_d</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top_game/DUT/U_MainController/game_done" type="logic">
+         <obj_property name="ElementShortName">game_done</obj_property>
+         <obj_property name="ObjectShortName">game_done</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top_game/DUT/U_MainController/music_sel" type="array">
+         <obj_property name="ElementShortName">music_sel[1:0]</obj_property>
+         <obj_property name="ObjectShortName">music_sel[1:0]</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="group129" type="group">
+      <obj_property name="label">sender</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject fp_name="/tb_top_game/DUT/U_sender/clk" type="logic">
+         <obj_property name="ElementShortName">clk</obj_property>
+         <obj_property name="ObjectShortName">clk</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top_game/DUT/U_sender/reset" type="logic">
+         <obj_property name="ElementShortName">reset</obj_property>
+         <obj_property name="ObjectShortName">reset</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top_game/DUT/U_sender/fifo_full" type="logic">
+         <obj_property name="ElementShortName">fifo_full</obj_property>
+         <obj_property name="ObjectShortName">fifo_full</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top_game/DUT/U_sender/tx" type="logic">
+         <obj_property name="ElementShortName">tx</obj_property>
+         <obj_property name="ObjectShortName">tx</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top_game/DUT/U_sender/main_state" type="array">
+         <obj_property name="ElementShortName">main_state[2:0]</obj_property>
+         <obj_property name="ObjectShortName">main_state[2:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top_game/DUT/U_sender/btn" type="array">
+         <obj_property name="ElementShortName">btn[3:0]</obj_property>
+         <obj_property name="ObjectShortName">btn[3:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top_game/DUT/U_sender/fever" type="logic">
+         <obj_property name="ElementShortName">fever</obj_property>
+         <obj_property name="ObjectShortName">fever</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top_game/DUT/U_sender/perfect" type="logic">
+         <obj_property name="ElementShortName">perfect</obj_property>
+         <obj_property name="ObjectShortName">perfect</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top_game/DUT/U_sender/good" type="logic">
+         <obj_property name="ElementShortName">good</obj_property>
+         <obj_property name="ObjectShortName">good</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top_game/DUT/U_sender/miss" type="logic">
+         <obj_property name="ElementShortName">miss</obj_property>
+         <obj_property name="ObjectShortName">miss</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top_game/DUT/U_sender/combo" type="array">
+         <obj_property name="ElementShortName">combo[7:0]</obj_property>
+         <obj_property name="ObjectShortName">combo[7:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top_game/DUT/U_sender/score" type="array">
+         <obj_property name="ElementShortName">score[23:0]</obj_property>
+         <obj_property name="ObjectShortName">score[23:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top_game/DUT/U_sender/data_in" type="array">
+         <obj_property name="ElementShortName">data_in[7:0]</obj_property>
+         <obj_property name="ObjectShortName">data_in[7:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top_game/DUT/U_sender/w_data_out" type="array">
+         <obj_property name="ElementShortName">w_data_out[7:0]</obj_property>
+         <obj_property name="ObjectShortName">w_data_out[7:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top_game/DUT/U_sender/w_fifo_empty" type="logic">
+         <obj_property name="ElementShortName">w_fifo_empty</obj_property>
+         <obj_property name="ObjectShortName">w_fifo_empty</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top_game/DUT/U_sender/w_uart_ready" type="logic">
+         <obj_property name="ElementShortName">w_uart_ready</obj_property>
+         <obj_property name="ObjectShortName">w_uart_ready</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top_game/DUT/U_sender/w_transfer_req" type="logic">
+         <obj_property name="ElementShortName">w_transfer_req</obj_property>
+         <obj_property name="ObjectShortName">w_transfer_req</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top_game/DUT/U_sender/w_transfer_req_reg" type="logic">
+         <obj_property name="ElementShortName">w_transfer_req_reg</obj_property>
+         <obj_property name="ObjectShortName">w_transfer_req_reg</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top_game/DUT/U_sender/fifo_pop" type="logic">
+         <obj_property name="ElementShortName">fifo_pop</obj_property>
+         <obj_property name="ObjectShortName">fifo_pop</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top_game/DUT/U_sender/fifo_push" type="logic">
+         <obj_property name="ElementShortName">fifo_push</obj_property>
+         <obj_property name="ObjectShortName">fifo_push</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top_game/DUT/U_sender/state" type="array">
+         <obj_property name="ElementShortName">state[2:0]</obj_property>
+         <obj_property name="ObjectShortName">state[2:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top_game/DUT/U_sender/btn_d" type="array">
+         <obj_property name="ElementShortName">btn_d[3:0]</obj_property>
+         <obj_property name="ObjectShortName">btn_d[3:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top_game/DUT/U_sender/btn_pressed" type="array">
+         <obj_property name="ElementShortName">btn_pressed[3:0]</obj_property>
+         <obj_property name="ObjectShortName">btn_pressed[3:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top_game/DUT/U_sender/perfect_held" type="logic">
+         <obj_property name="ElementShortName">perfect_held</obj_property>
+         <obj_property name="ObjectShortName">perfect_held</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top_game/DUT/U_sender/good_held" type="logic">
+         <obj_property name="ElementShortName">good_held</obj_property>
+         <obj_property name="ObjectShortName">good_held</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top_game/DUT/U_sender/miss_held" type="logic">
+         <obj_property name="ElementShortName">miss_held</obj_property>
+         <obj_property name="ObjectShortName">miss_held</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top_game/DUT/U_sender/event_trigger" type="logic">
+         <obj_property name="ElementShortName">event_trigger</obj_property>
+         <obj_property name="ObjectShortName">event_trigger</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top_game/DUT/U_sender/event_trigger_reg" type="logic">
+         <obj_property name="ElementShortName">event_trigger_reg</obj_property>
+         <obj_property name="ObjectShortName">event_trigger_reg</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top_game/DUT/U_sender/start_send" type="logic">
+         <obj_property name="ElementShortName">start_send</obj_property>
+         <obj_property name="ObjectShortName">start_send</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top_game/DUT/U_sender/CLK_FREQ" type="array">
+         <obj_property name="ElementShortName">CLK_FREQ[31:0]</obj_property>
+         <obj_property name="ObjectShortName">CLK_FREQ[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top_game/DUT/U_sender/BAUD_RATE" type="array">
+         <obj_property name="ElementShortName">BAUD_RATE[31:0]</obj_property>
+         <obj_property name="ObjectShortName">BAUD_RATE[31:0]</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="/tb_top_game/DUT/U_VGAcam/v_sync" type="logic">
+      <obj_property name="ElementShortName">v_sync</obj_property>
+      <obj_property name="ObjectShortName">v_sync</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top_game/DUT/U_VGAcam/region" type="array">
+      <obj_property name="ElementShortName">region[3:0]</obj_property>
+      <obj_property name="ObjectShortName">region[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="group143" type="group">
+      <obj_property name="label">rom_sel_reader</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="isExpanded"></obj_property>
+      <wvobject fp_name="/tb_top_game/DUT/U_MainController/U_top_game/U_ROM_SEL_READER/clk" type="logic">
+         <obj_property name="ElementShortName">clk</obj_property>
+         <obj_property name="ObjectShortName">clk</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top_game/DUT/U_MainController/U_top_game/U_ROM_SEL_READER/reset" type="logic">
+         <obj_property name="ElementShortName">reset</obj_property>
+         <obj_property name="ObjectShortName">reset</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top_game/DUT/U_MainController/U_top_game/U_ROM_SEL_READER/music_sel" type="array">
+         <obj_property name="ElementShortName">music_sel[1:0]</obj_property>
+         <obj_property name="ObjectShortName">music_sel[1:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top_game/DUT/U_MainController/U_top_game/U_ROM_SEL_READER/main_state" type="array">
+         <obj_property name="ElementShortName">main_state[2:0]</obj_property>
+         <obj_property name="ObjectShortName">main_state[2:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top_game/DUT/U_MainController/U_top_game/U_ROM_SEL_READER/note_done" type="logic">
+         <obj_property name="ElementShortName">note_done</obj_property>
+         <obj_property name="ObjectShortName">note_done</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top_game/DUT/U_MainController/U_top_game/U_ROM_SEL_READER/note_data" type="array">
+         <obj_property name="ElementShortName">note_data[31:0]</obj_property>
+         <obj_property name="ObjectShortName">note_data[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top_game/DUT/U_MainController/U_top_game/U_ROM_SEL_READER/song0_rom" type="array">
+         <obj_property name="ElementShortName">song0_rom[31:0]</obj_property>
+         <obj_property name="ObjectShortName">song0_rom[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top_game/DUT/U_MainController/U_top_game/U_ROM_SEL_READER/song1_rom" type="array">
+         <obj_property name="ElementShortName">song1_rom[31:0]</obj_property>
+         <obj_property name="ObjectShortName">song1_rom[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top_game/DUT/U_MainController/U_top_game/U_ROM_SEL_READER/song2_rom" type="array">
+         <obj_property name="ElementShortName">song2_rom[31:0]</obj_property>
+         <obj_property name="ObjectShortName">song2_rom[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top_game/DUT/U_MainController/U_top_game/U_ROM_SEL_READER/song_rom_sel" type="array">
+         <obj_property name="ElementShortName">song_rom_sel[31:0]</obj_property>
+         <obj_property name="ObjectShortName">song_rom_sel[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top_game/DUT/U_MainController/U_top_game/U_ROM_SEL_READER/rom_addr" type="array">
+         <obj_property name="ElementShortName">rom_addr[5:0]</obj_property>
+         <obj_property name="ObjectShortName">rom_addr[5:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="group158" type="group">
+      <obj_property name="label">note_control</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject fp_name="/tb_top_game/DUT/U_MainController/U_top_game/U_NOTE_CTRL/clk" type="logic">
+         <obj_property name="ElementShortName">clk</obj_property>
+         <obj_property name="ObjectShortName">clk</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top_game/DUT/U_MainController/U_top_game/U_NOTE_CTRL/reset" type="logic">
+         <obj_property name="ElementShortName">reset</obj_property>
+         <obj_property name="ObjectShortName">reset</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top_game/DUT/U_MainController/U_top_game/U_NOTE_CTRL/v_sync" type="logic">
+         <obj_property name="ElementShortName">v_sync</obj_property>
+         <obj_property name="ObjectShortName">v_sync</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top_game/DUT/U_MainController/U_top_game/U_NOTE_CTRL/note_data" type="array">
+         <obj_property name="ElementShortName">note_data[31:0]</obj_property>
+         <obj_property name="ObjectShortName">note_data[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top_game/DUT/U_MainController/U_top_game/U_NOTE_CTRL/main_state" type="array">
+         <obj_property name="ElementShortName">main_state[2:0]</obj_property>
+         <obj_property name="ObjectShortName">main_state[2:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top_game/DUT/U_MainController/U_top_game/U_NOTE_CTRL/o_lane" type="array">
+         <obj_property name="ElementShortName">o_lane[3:0]</obj_property>
+         <obj_property name="ObjectShortName">o_lane[3:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top_game/DUT/U_MainController/U_top_game/U_NOTE_CTRL/o_duration" type="array">
+         <obj_property name="ElementShortName">o_duration[11:0]</obj_property>
+         <obj_property name="ObjectShortName">o_duration[11:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top_game/DUT/U_MainController/U_top_game/U_NOTE_CTRL/note_done" type="logic">
+         <obj_property name="ElementShortName">note_done</obj_property>
+         <obj_property name="ObjectShortName">note_done</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top_game/DUT/U_MainController/U_top_game/U_NOTE_CTRL/game_done" type="logic">
+         <obj_property name="ElementShortName">game_done</obj_property>
+         <obj_property name="ObjectShortName">game_done</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top_game/DUT/U_MainController/U_top_game/U_NOTE_CTRL/frame_cnt" type="array">
+         <obj_property name="ElementShortName">frame_cnt[15:0]</obj_property>
+         <obj_property name="ObjectShortName">frame_cnt[15:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top_game/DUT/U_MainController/U_top_game/U_NOTE_CTRL/delay_cnt" type="array">
+         <obj_property name="ElementShortName">delay_cnt[15:0]</obj_property>
+         <obj_property name="ObjectShortName">delay_cnt[15:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top_game/DUT/U_MainController/U_top_game/U_NOTE_CTRL/v_sync_1" type="logic">
+         <obj_property name="ElementShortName">v_sync_1</obj_property>
+         <obj_property name="ObjectShortName">v_sync_1</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top_game/DUT/U_MainController/U_top_game/U_NOTE_CTRL/v_sync_2" type="logic">
+         <obj_property name="ElementShortName">v_sync_2</obj_property>
+         <obj_property name="ObjectShortName">v_sync_2</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top_game/DUT/U_MainController/U_top_game/U_NOTE_CTRL/v_sync_edge" type="logic">
+         <obj_property name="ElementShortName">v_sync_edge</obj_property>
+         <obj_property name="ObjectShortName">v_sync_edge</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="group195" type="group">
+      <obj_property name="label">line_counter</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject fp_name="/tb_top_game/DUT/U_MainController/U_top_game/U_LINE_COUNT/clk" type="logic">
+         <obj_property name="ElementShortName">clk</obj_property>
+         <obj_property name="ObjectShortName">clk</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top_game/DUT/U_MainController/U_top_game/U_LINE_COUNT/reset" type="logic">
+         <obj_property name="ElementShortName">reset</obj_property>
+         <obj_property name="ObjectShortName">reset</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top_game/DUT/U_MainController/U_top_game/U_LINE_COUNT/i_note" type="logic">
+         <obj_property name="ElementShortName">i_note</obj_property>
+         <obj_property name="ObjectShortName">i_note</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top_game/DUT/U_MainController/U_top_game/U_LINE_COUNT/i_lane" type="array">
+         <obj_property name="ElementShortName">i_lane[3:0]</obj_property>
+         <obj_property name="ObjectShortName">i_lane[3:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top_game/DUT/U_MainController/U_top_game/U_LINE_COUNT/i_vs" type="logic">
+         <obj_property name="ElementShortName">i_vs</obj_property>
+         <obj_property name="ObjectShortName">i_vs</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top_game/DUT/U_MainController/U_top_game/U_LINE_COUNT/i_done" type="logic">
+         <obj_property name="ElementShortName">i_done</obj_property>
+         <obj_property name="ObjectShortName">i_done</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top_game/DUT/U_MainController/U_top_game/U_LINE_COUNT/o_pos0" type="array">
+         <obj_property name="ElementShortName">o_pos0[3:0]</obj_property>
+         <obj_property name="ObjectShortName">o_pos0[3:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top_game/DUT/U_MainController/U_top_game/U_LINE_COUNT/o_lcnt0" type="array">
+         <obj_property name="ElementShortName">o_lcnt0[9:0]</obj_property>
+         <obj_property name="ObjectShortName">o_lcnt0[9:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top_game/DUT/U_MainController/U_top_game/U_LINE_COUNT/o_pos1" type="array">
+         <obj_property name="ElementShortName">o_pos1[3:0]</obj_property>
+         <obj_property name="ObjectShortName">o_pos1[3:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top_game/DUT/U_MainController/U_top_game/U_LINE_COUNT/o_lcnt1" type="array">
+         <obj_property name="ElementShortName">o_lcnt1[9:0]</obj_property>
+         <obj_property name="ObjectShortName">o_lcnt1[9:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top_game/DUT/U_MainController/U_top_game/U_LINE_COUNT/o_pos2" type="array">
+         <obj_property name="ElementShortName">o_pos2[3:0]</obj_property>
+         <obj_property name="ObjectShortName">o_pos2[3:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top_game/DUT/U_MainController/U_top_game/U_LINE_COUNT/o_lcnt2" type="array">
+         <obj_property name="ElementShortName">o_lcnt2[9:0]</obj_property>
+         <obj_property name="ObjectShortName">o_lcnt2[9:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top_game/DUT/U_MainController/U_top_game/U_LINE_COUNT/o_pos3" type="array">
+         <obj_property name="ElementShortName">o_pos3[3:0]</obj_property>
+         <obj_property name="ObjectShortName">o_pos3[3:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top_game/DUT/U_MainController/U_top_game/U_LINE_COUNT/o_lcnt3" type="array">
+         <obj_property name="ElementShortName">o_lcnt3[9:0]</obj_property>
+         <obj_property name="ObjectShortName">o_lcnt3[9:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top_game/DUT/U_MainController/U_top_game/U_LINE_COUNT/cnt" type="array">
+         <obj_property name="ElementShortName">cnt[1:0]</obj_property>
+         <obj_property name="ObjectShortName">cnt[1:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top_game/DUT/U_MainController/U_top_game/U_LINE_COUNT/r_pos0" type="array">
+         <obj_property name="ElementShortName">r_pos0[3:0]</obj_property>
+         <obj_property name="ObjectShortName">r_pos0[3:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top_game/DUT/U_MainController/U_top_game/U_LINE_COUNT/r_pos1" type="array">
+         <obj_property name="ElementShortName">r_pos1[3:0]</obj_property>
+         <obj_property name="ObjectShortName">r_pos1[3:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top_game/DUT/U_MainController/U_top_game/U_LINE_COUNT/r_pos2" type="array">
+         <obj_property name="ElementShortName">r_pos2[3:0]</obj_property>
+         <obj_property name="ObjectShortName">r_pos2[3:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top_game/DUT/U_MainController/U_top_game/U_LINE_COUNT/r_pos3" type="array">
+         <obj_property name="ElementShortName">r_pos3[3:0]</obj_property>
+         <obj_property name="ObjectShortName">r_pos3[3:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top_game/DUT/U_MainController/U_top_game/U_LINE_COUNT/r_lcnt0" type="array">
+         <obj_property name="ElementShortName">r_lcnt0[9:0]</obj_property>
+         <obj_property name="ObjectShortName">r_lcnt0[9:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top_game/DUT/U_MainController/U_top_game/U_LINE_COUNT/r_lcnt1" type="array">
+         <obj_property name="ElementShortName">r_lcnt1[9:0]</obj_property>
+         <obj_property name="ObjectShortName">r_lcnt1[9:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top_game/DUT/U_MainController/U_top_game/U_LINE_COUNT/r_lcnt2" type="array">
+         <obj_property name="ElementShortName">r_lcnt2[9:0]</obj_property>
+         <obj_property name="ObjectShortName">r_lcnt2[9:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top_game/DUT/U_MainController/U_top_game/U_LINE_COUNT/r_lcnt3" type="array">
+         <obj_property name="ElementShortName">r_lcnt3[9:0]</obj_property>
+         <obj_property name="ObjectShortName">r_lcnt3[9:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top_game/DUT/U_MainController/U_top_game/U_LINE_COUNT/r_en0" type="logic">
+         <obj_property name="ElementShortName">r_en0</obj_property>
+         <obj_property name="ObjectShortName">r_en0</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top_game/DUT/U_MainController/U_top_game/U_LINE_COUNT/r_en1" type="logic">
+         <obj_property name="ElementShortName">r_en1</obj_property>
+         <obj_property name="ObjectShortName">r_en1</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top_game/DUT/U_MainController/U_top_game/U_LINE_COUNT/r_en2" type="logic">
+         <obj_property name="ElementShortName">r_en2</obj_property>
+         <obj_property name="ObjectShortName">r_en2</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top_game/DUT/U_MainController/U_top_game/U_LINE_COUNT/r_en3" type="logic">
+         <obj_property name="ElementShortName">r_en3</obj_property>
+         <obj_property name="ObjectShortName">r_en3</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top_game/DUT/U_MainController/U_top_game/U_LINE_COUNT/r_frame_cnt0" type="array">
+         <obj_property name="ElementShortName">r_frame_cnt0[9:0]</obj_property>
+         <obj_property name="ObjectShortName">r_frame_cnt0[9:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top_game/DUT/U_MainController/U_top_game/U_LINE_COUNT/r_frame_cnt1" type="array">
+         <obj_property name="ElementShortName">r_frame_cnt1[9:0]</obj_property>
+         <obj_property name="ObjectShortName">r_frame_cnt1[9:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top_game/DUT/U_MainController/U_top_game/U_LINE_COUNT/r_frame_cnt2" type="array">
+         <obj_property name="ElementShortName">r_frame_cnt2[9:0]</obj_property>
+         <obj_property name="ObjectShortName">r_frame_cnt2[9:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top_game/DUT/U_MainController/U_top_game/U_LINE_COUNT/r_frame_cnt3" type="array">
+         <obj_property name="ElementShortName">r_frame_cnt3[9:0]</obj_property>
+         <obj_property name="ObjectShortName">r_frame_cnt3[9:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top_game/DUT/U_MainController/U_top_game/U_LINE_COUNT/r_vs_dly0" type="logic">
+         <obj_property name="ElementShortName">r_vs_dly0</obj_property>
+         <obj_property name="ObjectShortName">r_vs_dly0</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top_game/DUT/U_MainController/U_top_game/U_LINE_COUNT/w_vs_dly0_r" type="logic">
+         <obj_property name="ElementShortName">w_vs_dly0_r</obj_property>
+         <obj_property name="ObjectShortName">w_vs_dly0_r</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top_game/DUT/U_MainController/U_top_game/U_LINE_COUNT/w_vs_dly0_f" type="logic">
+         <obj_property name="ElementShortName">w_vs_dly0_f</obj_property>
+         <obj_property name="ObjectShortName">w_vs_dly0_f</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top_game/DUT/U_MainController/U_top_game/U_LINE_COUNT/FRAME_NUM" type="array">
+         <obj_property name="ElementShortName">FRAME_NUM[7:0]</obj_property>
+         <obj_property name="ObjectShortName">FRAME_NUM[7:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top_game/DUT/U_MainController/U_top_game/U_LINE_COUNT/LINE_VALUE" type="array">
+         <obj_property name="ElementShortName">LINE_VALUE[6:0]</obj_property>
+         <obj_property name="ObjectShortName">LINE_VALUE[6:0]</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="group240" type="group">
+      <obj_property name="label">gameresult</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject fp_name="/tb_top_game/DUT/U_MainController/U_top_game/U_GAMERESULT/clk" type="logic">
+         <obj_property name="ElementShortName">clk</obj_property>
+         <obj_property name="ObjectShortName">clk</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top_game/DUT/U_MainController/U_top_game/U_GAMERESULT/reset" type="logic">
+         <obj_property name="ElementShortName">reset</obj_property>
+         <obj_property name="ObjectShortName">reset</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top_game/DUT/U_MainController/U_top_game/U_GAMERESULT/pos0" type="array">
+         <obj_property name="ElementShortName">pos0[3:0]</obj_property>
+         <obj_property name="ObjectShortName">pos0[3:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top_game/DUT/U_MainController/U_top_game/U_GAMERESULT/pos1" type="array">
+         <obj_property name="ElementShortName">pos1[3:0]</obj_property>
+         <obj_property name="ObjectShortName">pos1[3:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top_game/DUT/U_MainController/U_top_game/U_GAMERESULT/pos2" type="array">
+         <obj_property name="ElementShortName">pos2[3:0]</obj_property>
+         <obj_property name="ObjectShortName">pos2[3:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top_game/DUT/U_MainController/U_top_game/U_GAMERESULT/pos3" type="array">
+         <obj_property name="ElementShortName">pos3[3:0]</obj_property>
+         <obj_property name="ObjectShortName">pos3[3:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top_game/DUT/U_MainController/U_top_game/U_GAMERESULT/lcnt0" type="array">
+         <obj_property name="ElementShortName">lcnt0[9:0]</obj_property>
+         <obj_property name="ObjectShortName">lcnt0[9:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top_game/DUT/U_MainController/U_top_game/U_GAMERESULT/lcnt1" type="array">
+         <obj_property name="ElementShortName">lcnt1[9:0]</obj_property>
+         <obj_property name="ObjectShortName">lcnt1[9:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top_game/DUT/U_MainController/U_top_game/U_GAMERESULT/lcnt2" type="array">
+         <obj_property name="ElementShortName">lcnt2[9:0]</obj_property>
+         <obj_property name="ObjectShortName">lcnt2[9:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top_game/DUT/U_MainController/U_top_game/U_GAMERESULT/lcnt3" type="array">
+         <obj_property name="ElementShortName">lcnt3[9:0]</obj_property>
+         <obj_property name="ObjectShortName">lcnt3[9:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top_game/DUT/U_MainController/U_top_game/U_GAMERESULT/region" type="array">
+         <obj_property name="ElementShortName">region[3:0]</obj_property>
+         <obj_property name="ObjectShortName">region[3:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top_game/DUT/U_MainController/U_top_game/U_GAMERESULT/v_sync" type="logic">
+         <obj_property name="ElementShortName">v_sync</obj_property>
+         <obj_property name="ObjectShortName">v_sync</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top_game/DUT/U_MainController/U_top_game/U_GAMERESULT/perfect" type="logic">
+         <obj_property name="ElementShortName">perfect</obj_property>
+         <obj_property name="ObjectShortName">perfect</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top_game/DUT/U_MainController/U_top_game/U_GAMERESULT/good" type="logic">
+         <obj_property name="ElementShortName">good</obj_property>
+         <obj_property name="ObjectShortName">good</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top_game/DUT/U_MainController/U_top_game/U_GAMERESULT/miss" type="logic">
+         <obj_property name="ElementShortName">miss</obj_property>
+         <obj_property name="ObjectShortName">miss</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top_game/DUT/U_MainController/U_top_game/U_GAMERESULT/combo_done" type="logic">
+         <obj_property name="ElementShortName">combo_done</obj_property>
+         <obj_property name="ObjectShortName">combo_done</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top_game/DUT/U_MainController/U_top_game/U_GAMERESULT/combo_data" type="array">
+         <obj_property name="ElementShortName">combo_data[9:0]</obj_property>
+         <obj_property name="ObjectShortName">combo_data[9:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top_game/DUT/U_MainController/U_top_game/U_GAMERESULT/fever" type="logic">
+         <obj_property name="ElementShortName">fever</obj_property>
+         <obj_property name="ObjectShortName">fever</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top_game/DUT/U_MainController/U_top_game/U_GAMERESULT/pos" type="array">
+         <obj_property name="ElementShortName">pos[0:3][3:0]</obj_property>
+         <obj_property name="ObjectShortName">pos[0:3][3:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top_game/DUT/U_MainController/U_top_game/U_GAMERESULT/lcnt" type="array">
+         <obj_property name="ElementShortName">lcnt[0:3][9:0]</obj_property>
+         <obj_property name="ObjectShortName">lcnt[0:3][9:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top_game/DUT/U_MainController/U_top_game/U_GAMERESULT/perfect_slot" type="array">
+         <obj_property name="ElementShortName">perfect_slot[3:0]</obj_property>
+         <obj_property name="ObjectShortName">perfect_slot[3:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top_game/DUT/U_MainController/U_top_game/U_GAMERESULT/good_slot" type="array">
+         <obj_property name="ElementShortName">good_slot[3:0]</obj_property>
+         <obj_property name="ObjectShortName">good_slot[3:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top_game/DUT/U_MainController/U_top_game/U_GAMERESULT/miss_slot" type="array">
+         <obj_property name="ElementShortName">miss_slot[3:0]</obj_property>
+         <obj_property name="ObjectShortName">miss_slot[3:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top_game/DUT/U_MainController/U_top_game/U_GAMERESULT/input_miss" type="logic">
+         <obj_property name="ElementShortName">input_miss</obj_property>
+         <obj_property name="ObjectShortName">input_miss</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top_game/DUT/U_MainController/U_top_game/U_GAMERESULT/region_d" type="array">
+         <obj_property name="ElementShortName">region_d[3:0]</obj_property>
+         <obj_property name="ObjectShortName">region_d[3:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top_game/DUT/U_MainController/U_top_game/U_GAMERESULT/slot0_in_zone" type="logic">
+         <obj_property name="ElementShortName">slot0_in_zone</obj_property>
+         <obj_property name="ObjectShortName">slot0_in_zone</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top_game/DUT/U_MainController/U_top_game/U_GAMERESULT/slot1_in_zone" type="logic">
+         <obj_property name="ElementShortName">slot1_in_zone</obj_property>
+         <obj_property name="ObjectShortName">slot1_in_zone</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top_game/DUT/U_MainController/U_top_game/U_GAMERESULT/slot2_in_zone" type="logic">
+         <obj_property name="ElementShortName">slot2_in_zone</obj_property>
+         <obj_property name="ObjectShortName">slot2_in_zone</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top_game/DUT/U_MainController/U_top_game/U_GAMERESULT/slot3_in_zone" type="logic">
+         <obj_property name="ElementShortName">slot3_in_zone</obj_property>
+         <obj_property name="ObjectShortName">slot3_in_zone</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top_game/DUT/U_MainController/U_top_game/U_GAMERESULT/lane0_has_note" type="logic">
+         <obj_property name="ElementShortName">lane0_has_note</obj_property>
+         <obj_property name="ObjectShortName">lane0_has_note</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top_game/DUT/U_MainController/U_top_game/U_GAMERESULT/lane1_has_note" type="logic">
+         <obj_property name="ElementShortName">lane1_has_note</obj_property>
+         <obj_property name="ObjectShortName">lane1_has_note</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top_game/DUT/U_MainController/U_top_game/U_GAMERESULT/lane2_has_note" type="logic">
+         <obj_property name="ElementShortName">lane2_has_note</obj_property>
+         <obj_property name="ObjectShortName">lane2_has_note</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top_game/DUT/U_MainController/U_top_game/U_GAMERESULT/lane3_has_note" type="logic">
+         <obj_property name="ElementShortName">lane3_has_note</obj_property>
+         <obj_property name="ObjectShortName">lane3_has_note</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top_game/DUT/U_MainController/U_top_game/U_GAMERESULT/lane0_hand_pressed" type="logic">
+         <obj_property name="ElementShortName">lane0_hand_pressed</obj_property>
+         <obj_property name="ObjectShortName">lane0_hand_pressed</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top_game/DUT/U_MainController/U_top_game/U_GAMERESULT/lane1_hand_pressed" type="logic">
+         <obj_property name="ElementShortName">lane1_hand_pressed</obj_property>
+         <obj_property name="ObjectShortName">lane1_hand_pressed</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top_game/DUT/U_MainController/U_top_game/U_GAMERESULT/lane2_hand_pressed" type="logic">
+         <obj_property name="ElementShortName">lane2_hand_pressed</obj_property>
+         <obj_property name="ObjectShortName">lane2_hand_pressed</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top_game/DUT/U_MainController/U_top_game/U_GAMERESULT/lane3_hand_pressed" type="logic">
+         <obj_property name="ElementShortName">lane3_hand_pressed</obj_property>
+         <obj_property name="ObjectShortName">lane3_hand_pressed</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top_game/DUT/U_MainController/U_top_game/U_GAMERESULT/wrong_hand_pressed" type="logic">
+         <obj_property name="ElementShortName">wrong_hand_pressed</obj_property>
+         <obj_property name="ObjectShortName">wrong_hand_pressed</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top_game/DUT/U_MainController/U_top_game/U_GAMERESULT/v_sync_d" type="logic">
+         <obj_property name="ElementShortName">v_sync_d</obj_property>
+         <obj_property name="ObjectShortName">v_sync_d</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top_game/DUT/U_MainController/U_top_game/U_GAMERESULT/frame_tick" type="logic">
+         <obj_property name="ElementShortName">frame_tick</obj_property>
+         <obj_property name="ObjectShortName">frame_tick</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top_game/DUT/U_MainController/U_top_game/U_GAMERESULT/combo_cnt" type="array">
+         <obj_property name="ElementShortName">combo_cnt[9:0]</obj_property>
+         <obj_property name="ObjectShortName">combo_cnt[9:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top_game/DUT/U_MainController/U_top_game/U_GAMERESULT/perf_cnt" type="array">
+         <obj_property name="ElementShortName">perf_cnt[3:0]</obj_property>
+         <obj_property name="ObjectShortName">perf_cnt[3:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top_game/DUT/U_MainController/U_top_game/U_GAMERESULT/JUDGE_LINE" type="array">
+         <obj_property name="ElementShortName">JUDGE_LINE[31:0]</obj_property>
+         <obj_property name="ObjectShortName">JUDGE_LINE[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top_game/DUT/U_MainController/U_top_game/U_GAMERESULT/JUDGE_GOOD_HALF" type="array">
+         <obj_property name="ElementShortName">JUDGE_GOOD_HALF[31:0]</obj_property>
+         <obj_property name="ObjectShortName">JUDGE_GOOD_HALF[31:0]</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="group255" type="group">
+      <obj_property name="label">score</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject fp_name="/tb_top_game/DUT/U_MainController/U_top_game/U_SCORE/clk" type="logic">
+         <obj_property name="ElementShortName">clk</obj_property>
+         <obj_property name="ObjectShortName">clk</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top_game/DUT/U_MainController/U_top_game/U_SCORE/reset" type="logic">
+         <obj_property name="ElementShortName">reset</obj_property>
+         <obj_property name="ObjectShortName">reset</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top_game/DUT/U_MainController/U_top_game/U_SCORE/main_state" type="array">
+         <obj_property name="ElementShortName">main_state[2:0]</obj_property>
+         <obj_property name="ObjectShortName">main_state[2:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top_game/DUT/U_MainController/U_top_game/U_SCORE/good" type="logic">
+         <obj_property name="ElementShortName">good</obj_property>
+         <obj_property name="ObjectShortName">good</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top_game/DUT/U_MainController/U_top_game/U_SCORE/perfect" type="logic">
+         <obj_property name="ElementShortName">perfect</obj_property>
+         <obj_property name="ObjectShortName">perfect</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top_game/DUT/U_MainController/U_top_game/U_SCORE/miss" type="logic">
+         <obj_property name="ElementShortName">miss</obj_property>
+         <obj_property name="ObjectShortName">miss</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top_game/DUT/U_MainController/U_top_game/U_SCORE/combo_done" type="logic">
+         <obj_property name="ElementShortName">combo_done</obj_property>
+         <obj_property name="ObjectShortName">combo_done</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top_game/DUT/U_MainController/U_top_game/U_SCORE/combo_data" type="array">
+         <obj_property name="ElementShortName">combo_data[9:0]</obj_property>
+         <obj_property name="ObjectShortName">combo_data[9:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top_game/DUT/U_MainController/U_top_game/U_SCORE/fever" type="logic">
+         <obj_property name="ElementShortName">fever</obj_property>
+         <obj_property name="ObjectShortName">fever</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top_game/DUT/U_MainController/U_top_game/U_SCORE/score" type="array">
+         <obj_property name="ElementShortName">score[23:0]</obj_property>
+         <obj_property name="ObjectShortName">score[23:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top_game/DUT/U_MainController/U_top_game/U_SCORE/basic_score" type="array">
+         <obj_property name="ElementShortName">basic_score[22:0]</obj_property>
+         <obj_property name="ObjectShortName">basic_score[22:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top_game/DUT/U_MainController/U_top_game/U_SCORE/combo_reg" type="array">
+         <obj_property name="ElementShortName">combo_reg[22:0]</obj_property>
+         <obj_property name="ObjectShortName">combo_reg[22:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top_game/DUT/U_MainController/U_top_game/U_SCORE/combo_score" type="array">
+         <obj_property name="ElementShortName">combo_score[22:0]</obj_property>
+         <obj_property name="ObjectShortName">combo_score[22:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top_game/DUT/U_MainController/U_top_game/U_SCORE/state" type="array">
+         <obj_property name="ElementShortName">state[1:0]</obj_property>
+         <obj_property name="ObjectShortName">state[1:0]</obj_property>
+      </wvobject>
+   </wvobject>
+</wave_config>

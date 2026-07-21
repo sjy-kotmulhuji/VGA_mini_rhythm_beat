@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="tb_top_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="glbl" />
+            <top_module name="tb_top" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="0fs"></ZoomStartTime>
+      <ZoomEndTime time="13431281000fs"></ZoomEndTime>
+      <Cursor1Time time="435000fs"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="86"></NameColumnWidth>
+      <ValueColumnWidth column_width="73"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="43" />
+   <wvobject fp_name="/tb_top/UUT/U_MainController/btn_l_f" type="logic">
+      <obj_property name="ElementShortName">btn_l_f</obj_property>
+      <obj_property name="ObjectShortName">btn_l_f</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top/UUT/U_MainController/btn_r_f" type="logic">
+      <obj_property name="ElementShortName">btn_r_f</obj_property>
+      <obj_property name="ObjectShortName">btn_r_f</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top/UUT/U_MainController/btn_d_f" type="logic">
+      <obj_property name="ElementShortName">btn_d_f</obj_property>
+      <obj_property name="ObjectShortName">btn_d_f</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top/UUT/U_MainController/v_sync" type="logic">
+      <obj_property name="ElementShortName">v_sync</obj_property>
+      <obj_property name="ObjectShortName">v_sync</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top/UUT/U_MainController/region" type="array">
+      <obj_property name="ElementShortName">region[3:0]</obj_property>
+      <obj_property name="ObjectShortName">region[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top/UUT/U_MainController/capture_done" type="logic">
+      <obj_property name="ElementShortName">capture_done</obj_property>
+      <obj_property name="ObjectShortName">capture_done</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top/UUT/U_MainController/main_done" type="logic">
+      <obj_property name="ElementShortName">main_done</obj_property>
+      <obj_property name="ObjectShortName">main_done</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top/UUT/U_MainController/o_state" type="array">
+      <obj_property name="ElementShortName">o_state[2:0]</obj_property>
+      <obj_property name="ObjectShortName">o_state[2:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top/UUT/U_MainController/o_lane" type="array">
+      <obj_property name="ElementShortName">o_lane[3:0]</obj_property>
+      <obj_property name="ObjectShortName">o_lane[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top/UUT/U_MainController/o_duration" type="array">
+      <obj_property name="ElementShortName">o_duration[11:0]</obj_property>
+      <obj_property name="ObjectShortName">o_duration[11:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top/UUT/U_MainController/score" type="array">
+      <obj_property name="ElementShortName">score[23:0]</obj_property>
+      <obj_property name="ObjectShortName">score[23:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top/UUT/U_MainController/perfect" type="logic">
+      <obj_property name="ElementShortName">perfect</obj_property>
+      <obj_property name="ObjectShortName">perfect</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top/UUT/U_MainController/good" type="logic">
+      <obj_property name="ElementShortName">good</obj_property>
+      <obj_property name="ObjectShortName">good</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top/UUT/U_MainController/miss" type="logic">
+      <obj_property name="ElementShortName">miss</obj_property>
+      <obj_property name="ObjectShortName">miss</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top/UUT/U_MainController/combo" type="array">
+      <obj_property name="ElementShortName">combo[9:0]</obj_property>
+      <obj_property name="ObjectShortName">combo[9:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top/UUT/U_MainController/fever" type="logic">
+      <obj_property name="ElementShortName">fever</obj_property>
+      <obj_property name="ObjectShortName">fever</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top/UUT/U_MainController/o_btn_l" type="logic">
+      <obj_property name="ElementShortName">o_btn_l</obj_property>
+      <obj_property name="ObjectShortName">o_btn_l</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top/UUT/U_MainController/o_btn_r" type="logic">
+      <obj_property name="ElementShortName">o_btn_r</obj_property>
+      <obj_property name="ObjectShortName">o_btn_r</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top/UUT/U_MainController/o_btn_d" type="logic">
+      <obj_property name="ElementShortName">o_btn_d</obj_property>
+      <obj_property name="ObjectShortName">o_btn_d</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top/UUT/U_MainController/game_done" type="logic">
+      <obj_property name="ElementShortName">game_done</obj_property>
+      <obj_property name="ObjectShortName">game_done</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top/UUT/U_MainController/music_sel" type="array">
+      <obj_property name="ElementShortName">music_sel[1:0]</obj_property>
+      <obj_property name="ObjectShortName">music_sel[1:0]</obj_property>
+   </wvobject>
+   <wvobject type="divider" fp_name="divider75">
+      <obj_property name="label">Rom_Sel_Reader</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top/UUT/U_MainController/U_top_game/U_ROM_SEL_READER/music_sel" type="array">
+      <obj_property name="ElementShortName">music_sel[1:0]</obj_property>
+      <obj_property name="ObjectShortName">music_sel[1:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top/UUT/U_MainController/U_top_game/U_ROM_SEL_READER/main_state" type="array">
+      <obj_property name="ElementShortName">main_state[2:0]</obj_property>
+      <obj_property name="ObjectShortName">main_state[2:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top/UUT/U_MainController/U_top_game/U_ROM_SEL_READER/note_done" type="logic">
+      <obj_property name="ElementShortName">note_done</obj_property>
+      <obj_property name="ObjectShortName">note_done</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top/UUT/U_MainController/U_top_game/U_ROM_SEL_READER/note_data" type="array">
+      <obj_property name="ElementShortName">note_data[31:0]</obj_property>
+      <obj_property name="ObjectShortName">note_data[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top/UUT/U_MainController/U_top_game/U_ROM_SEL_READER/song0_rom" type="array">
+      <obj_property name="ElementShortName">song0_rom[31:0]</obj_property>
+      <obj_property name="ObjectShortName">song0_rom[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top/UUT/U_MainController/U_top_game/U_ROM_SEL_READER/song1_rom" type="array">
+      <obj_property name="ElementShortName">song1_rom[31:0]</obj_property>
+      <obj_property name="ObjectShortName">song1_rom[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top/UUT/U_MainController/U_top_game/U_ROM_SEL_READER/song2_rom" type="array">
+      <obj_property name="ElementShortName">song2_rom[31:0]</obj_property>
+      <obj_property name="ObjectShortName">song2_rom[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top/UUT/U_MainController/U_top_game/U_ROM_SEL_READER/song_rom_sel" type="array">
+      <obj_property name="ElementShortName">song_rom_sel[31:0]</obj_property>
+      <obj_property name="ObjectShortName">song_rom_sel[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top/UUT/U_MainController/U_top_game/U_ROM_SEL_READER/rom_addr" type="array">
+      <obj_property name="ElementShortName">rom_addr[5:0]</obj_property>
+      <obj_property name="ObjectShortName">rom_addr[5:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top/UUT/U_MainController/U_top_game/U_ROM_SEL_READER/rom_cnt" type="array">
+      <obj_property name="ElementShortName">rom_cnt[6:0]</obj_property>
+      <obj_property name="ObjectShortName">rom_cnt[6:0]</obj_property>
+   </wvobject>
+   <wvobject type="divider" fp_name="divider76">
+      <obj_property name="label">Note_Controller</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top/UUT/U_MainController/U_top_game/U_NOTE_CTRL/v_sync" type="logic">
+      <obj_property name="ElementShortName">v_sync</obj_property>
+      <obj_property name="ObjectShortName">v_sync</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top/UUT/U_MainController/U_top_game/U_NOTE_CTRL/v_sync_edge" type="logic">
+      <obj_property name="ElementShortName">v_sync_edge</obj_property>
+      <obj_property name="ObjectShortName">v_sync_edge</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top/UUT/U_MainController/U_top_game/U_NOTE_CTRL/note_data" type="array">
+      <obj_property name="ElementShortName">note_data[31:0]</obj_property>
+      <obj_property name="ObjectShortName">note_data[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top/UUT/U_MainController/U_top_game/U_NOTE_CTRL/main_state" type="array">
+      <obj_property name="ElementShortName">main_state[2:0]</obj_property>
+      <obj_property name="ObjectShortName">main_state[2:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top/UUT/U_MainController/U_top_game/U_NOTE_CTRL/o_lane" type="array">
+      <obj_property name="ElementShortName">o_lane[3:0]</obj_property>
+      <obj_property name="ObjectShortName">o_lane[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top/UUT/U_MainController/U_top_game/U_NOTE_CTRL/o_duration" type="array">
+      <obj_property name="ElementShortName">o_duration[11:0]</obj_property>
+      <obj_property name="ObjectShortName">o_duration[11:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top/UUT/U_MainController/U_top_game/U_NOTE_CTRL/note_done" type="logic">
+      <obj_property name="ElementShortName">note_done</obj_property>
+      <obj_property name="ObjectShortName">note_done</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top/UUT/U_MainController/U_top_game/U_NOTE_CTRL/game_done" type="logic">
+      <obj_property name="ElementShortName">game_done</obj_property>
+      <obj_property name="ObjectShortName">game_done</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top/UUT/U_MainController/U_top_game/U_NOTE_CTRL/frame_cnt" type="array">
+      <obj_property name="ElementShortName">frame_cnt[15:0]</obj_property>
+      <obj_property name="ObjectShortName">frame_cnt[15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top/UUT/U_MainController/U_top_game/U_NOTE_CTRL/delay_cnt" type="array">
+      <obj_property name="ElementShortName">delay_cnt[15:0]</obj_property>
+      <obj_property name="ObjectShortName">delay_cnt[15:0]</obj_property>
+   </wvobject>
+</wave_config>
