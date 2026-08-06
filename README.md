@@ -30,8 +30,19 @@
 * **Main Controller**: 게임의 전체 제어 담당(상태 제어, VGA 화면 노트 생성, 판정, 점수 계산 모듈 포함)
   - Main State FSM
   <img width="1823" height="869" alt="image" src="https://github.com/user-attachments/assets/1aaaddf4-7ab8-4dfa-a114-dd7c8d2e33d2" />
+  
+  - 점수 판정 화면
+    <img width="611" height="452" alt="image" src="https://github.com/user-attachments/assets/567895dd-9b90-4ac6-a27a-501d0f2ca21b" />
+
+  - 판정, 점수 계산 기준(판정선 기준)
+    <img width="557" height="119" alt="image" src="https://github.com/user-attachments/assets/62ed2e8a-99a2-4405-a3ea-eccd5e8fa182" />
+
+
 * **VGA cam**: 640x480 @ 60Hz VGA 제어 및 노트 생성, 판정선, 점수판(SCORE) 등의 그래픽 overlay 처리
 * **UART Sender**: 버튼 입력, 게임 state, 판정 결과 FPGA -> PC로 송신
+  - FSM
+    <img width="989" height="448" alt="image" src="https://github.com/user-attachments/assets/74eabe94-b1ef-403e-aaee-499ca3bdebf2" />
+
 * **UART Receiver**: PC로부터 노트 레인 정보를 받아 Main Controller에 전달, game_done
 
 ### 2. Python
@@ -63,14 +74,11 @@
 
 ---
 
-## Trouble Shooting & 고찰
+## Trouble Shooting
 
-* **카메라 노이즈 및 색상 탐지 오작동 해결**
-  * 조명 환경에 따른 색상 탐지 오차를 줄이기 위해 픽셀 신호에 대한 Thresholding 조건 보정 및 필터링 알고리즘 적용
-* **VGA 동기화 및 렌더링 최적화**
-  * 여러 개체가 동시에 움직일 때 화면 찢어짐(Tearing)을 방지하기 위해 픽셀 카운터 및 V-Sync / H-Sync 타이밍 최적화
-* **UVM 검증 가품성 확인**
-  * 비동기 카메라 입력과 동기식 VGA 출력 간의 타이밍 미스매치를 UVM Monitor/Scoreboard를 통해 추적 및 수정
+* **Negative Slack Issue**
+  - 문제: Negative Slack(WNS = 0.561ns) 발생
+  - 원인: 점수 계산 부분에서 다수의 곱셈 및 나눗셈 연산이 하나의 조합논리 경로에 집중되어 있어 해당 경로의 Propagation Delay 증가
 
 ---
 
