@@ -21,27 +21,26 @@
 ---
 
 ## 시스템 구조 및 설계 (System Architecture)
-### 전체 Block Diagram
+### 1. FPGA RTL Design
+- FPGA 보드가 게임 컨트롤러 역할을 함.
+#### 전체 Block Diagram
 <img width="2159" height="1519" alt="image" src="https://github.com/user-attachments/assets/563a6f8d-b1f4-4de9-b5bb-7b9da61deb12" />
 
-### 모듈 상세
+#### 모듈 상세
 * **Main Controller**: 게임의 전체 제어 담당(상태 제어, VGA 화면 노트 생성, 판정, 점수 계산 모듈 포함)
-* **VGA cam**: 640x480 @ 60Hz VGA 제어 및 노트 생성, 판정선, 점수판(SCORE) 등의 그래픽 오버레이 처리
-  <img width="798" height="439" alt="image" src="https://github.com/user-attachments/assets/121df019-40fa-411c-87b4-29d87a1f8d7c" />
-  1. 빨간색이 감지된 영역 정보 출력
-  2. 해당 영역 빨간색으로 표시
-  3. 화면에 노트 출력
-  4. 판정선 출력
-  
-* **카메라 입력 & 색상 탐지 모듈 (Camera & Color Detection)**:
-  * 실시간 입력 영상에서 HSV / RGB 색상 공간 변환을 통해 특정 영역 내의 **빨간색 물체** 탐지
-  * 화면 구역을 나누어 각 영역에 들어온 입력 신호를 노트 판정 신호로 전환
-* **VGA 컨트롤러 & 디스플레이 모듈**:
-  * 640x480 @ 60Hz VGA 제어
-  * 노트(Node) 생성, 판정선(Hit Line), 점수판(SCORE) 등의 그래픽 오버레이 처리
-* **게임 로직 모듈 (Game Logic)**:
-  * 4-Lane(A, S, D, F) 노트 낙하 로직 및 판정 알고리즘 (Perfect/Great/Miss)
-  * 스코어링 시스템 구현
+  - Main State FSM
+  <img width="1823" height="869" alt="image" src="https://github.com/user-attachments/assets/1aaaddf4-7ab8-4dfa-a114-dd7c8d2e33d2" />
+* **VGA cam**: 640x480 @ 60Hz VGA 제어 및 노트 생성, 판정선, 점수판(SCORE) 등의 그래픽 overlay 처리
+* **UART Sender**: 버튼 입력, 게임 state, 판정 결과 FPGA -> PC로 송신
+* **UART Receiver**: PC로부터 노트 레인 정보를 받아 Main Controller에 전달, game_done
+
+### 2. Python
+- 미디어 엔진 역할(GUI)
+* **Main Controller의 state에 따른 화면 구성**
+<img width="1127" height="216" alt="image" src="https://github.com/user-attachments/assets/70cf36c1-dc80-426c-8da2-510dac67c14e" />
+
+* **음악별 노트 ROM**: 음악별 박자에 맞춰 떨어질 노트의 시간, 레인 정보가 담긴 ROM
+* **UART 프로토콜을 통해 FPGA와 통신**: FPGA로부터 게임의 상태를 수신해 화면 띄우고 노트 생성 시 레인 정보 송신
 
 ---
 
