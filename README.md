@@ -5,11 +5,8 @@
 ---
 
 ## 📌 프로젝트 개요 (Project Overview)
-* **프로젝트명**: VGA를 활용한 카메라 기반 색상 인식 리듬게임 (RHYTHM BEAT)
-* **개발 기간**: 2026/07/09~17
-* **주요 기능**:
-  * 카메라 센서(OV7670)를 통한 실시간 영상 입력 받기
-  * 카메라 화면 구역 분할 및 **빨간색(Red) 탐지** 알고리즘 구현
+  * 카메라 센서(OV7670)를 통한 실시간 영상 입력
+  * VGA 화면 구역 분할 및 **빨간색(Red) 탐지** 알고리즘 구현
   * Python을 활용한 게임 UI(상황별 화면)
   * Python(PC)와 FPGA 간 UART 통신으로 노트 및 점수 데이터 송수신
   * UVM(Universal Verification Methodology) 기반 Top_Game 모듈 검증
@@ -24,7 +21,16 @@
 
 ## 🛠 시스템 구조 및 설계 (System Architecture)
 
-### 1. Block Diagram & 주요 설계
+### 1. 모듈 설계
+#### 전체 Block Diagram
+<img width="2159" height="1519" alt="image" src="https://github.com/user-attachments/assets/563a6f8d-b1f4-4de9-b5bb-7b9da61deb12" />
+
+#### 모듈 상세
+
+* **Main Controller**: 게임의 전체 제어 담당(상태 제어, VGA 화면 노트 생성, 판정, 점수 계산 모듈 포함)
+* **VGA cam**: 640x480 @ 60Hz VGA 제어 및 노트 생성, 판정선, 점수판(SCORE) 등의 그래픽 오버레이 처리
+  1.  <img width="798" height="439" alt="image" src="https://github.com/user-attachments/assets/121df019-40fa-411c-87b4-29d87a1f8d7c" />
+
 * **카메라 입력 & 색상 탐지 모듈 (Camera & Color Detection)**:
   * 실시간 입력 영상에서 HSV / RGB 색상 공간 변환을 통해 특정 영역 내의 **빨간색 물체** 탐지
   * 화면 구역을 나누어 각 영역에 들어온 입력 신호를 노트 판정 신호로 전환
