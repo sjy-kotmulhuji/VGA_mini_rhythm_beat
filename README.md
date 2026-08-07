@@ -63,14 +63,9 @@
 
 ---
 
-## 주요 기능 시연 (Features & Demo)
+## 동작 영상(Demo)
 
-1. **시작 화면 (Title Screen)**
-   * `RHYTHM BEAT` 메인 타이틀 및 `PRESS START` 애니메이션
-2. **카메라 인식 및 구역 탐지**
-   * 카메라에 **빨간색 물체**가 포착되면 지정된 구역의 입력 이벤트 발생
-3. **게임 플레이 (In-Game)**
-   * 위에서 아래로 떨어지는 노트에 맞춰 탐지 영역을 터치하여 스코어 획득
+https://github.com/user-attachments/assets/30db6d83-675b-4b80-aaed-5d3828cef04a
 
 ---
 
