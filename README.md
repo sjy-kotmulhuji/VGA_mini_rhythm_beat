@@ -83,24 +83,21 @@
     <img width="620" height="168" alt="image" src="https://github.com/user-attachments/assets/4480ab4f-be01-4f8a-97d5-cc238db78333" />
 * **Sender FIFO의 POP 시점 오류**
   - 문제: Sender에서 데이터 보내는 타이밍이 한 cycle 밀림
-  - 원인: POP 시점이 FIFO로 데이터가 들어올 때가 아니라 다음 데이터가 들어올 때
+  - 원인: POP 시점을 FIFO로 데이터가 들어올 때가 아니라 다음 데이터가 들어올 때로 설계함
   - 해결: FIFO로 데이터가 들어오는 시점(FIFO !empty & Tx ready & !valid 조건이 충족됐을 때)에 POP 신호 발생
-  <img width="477" height="240" alt="image" src="https://github.com/user-attachments/assets/b6bacbc7-ad0e-4894-b8a7-7b6ee5c6a3f2" />
+   <img width="477" height="240" alt="image" src="https://github.com/user-attachments/assets/b6bacbc7-ad0e-4894-b8a7-7b6ee5c6a3f2" />
+* **전체 동작 및 UART 통신 구조 변경**
+  - 문제: 게임 실행 시 내려오는 노트의 싱크가 완벽히 맞지 않음
+  - 원인: FPGA와 PC(Python)이 각각 동일한 노트 ROM을 가지고 있고 게임 시작 시 양쪽의 타이머를 동시에 독립적으로 구동하여 실행하는 구조로 설계하여 UART 통신 딜레이와 양쪽의 clock 기준 차이로 인한 싱크 오차 발생
+  - 해결: 노트 ROM은 Python만 가지고 있고 FPGA가 게임 전체 컨트롤러 역할을 하며 게임 중 노트가 발생할 때마다 Python에서 FPGA로 해당 노트의 레인 정보를 송신하는 구조로 변경해 통신 데이터 최소화 및 싱크 오차 해결
 
+| 변경 전 구조 | 변경 후 구조 |
+| :---: | :---: |
+|<img width="1095" height="273" alt="image" src="https://github.com/user-attachments/assets/be231fc8-d72d-41e6-beb7-9bf8485e6724" /> | <img width="996" height="253" alt="image" src="https://github.com/user-attachments/assets/8a399ba0-2528-42f3-9815-ba504ac60ffc" /> |
+
+## 고찰
+- 처음 구조였던 동시 통신 방식이 매우 불안정하고 불확실한 방법이란 것을 깨닫게 되었다.
+-  
+- 중간에 설계 구조가 변경되는 문제가 있었지만 팀원들끼리 힘 
 
 ---
-
-## 📁 폴더 구조 (Directory Structure)
-
-```text
-├── rtl/                   # Verilog / SystemVerilog RTL 소스 코드
-│   ├── vga_controller.v   # VGA 타이밍 제어
-│   ├── color_detector.v   # 카메라 색상 인식 및 구역 판정
-│   ├── game_logic.v       # 리듬게임 로직 및 점수 계산
-│   └── top_game.v         # 최상위 탑 모듈
-├── uvm/                   # UVM 검증 환경 코드
-│   ├── env.sv
-│   ├── test.sv
-│   └── tb_top.sv
-├── doc/                   # 프로젝트 발표 자료 및 이미지
-└── README.md
