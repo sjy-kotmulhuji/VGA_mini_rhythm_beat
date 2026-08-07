@@ -79,6 +79,14 @@
 * **Negative Slack Issue**
   - 문제: Negative Slack(WNS = 0.561ns) 발생
   - 원인: 점수 계산 부분에서 다수의 곱셈 및 나눗셈 연산이 하나의 조합논리 경로에 집중되어 있어 해당 경로의 Propagation Delay 증가
+  - 해결: 중간 연산 결과 저장하는 register 추가하여 하나의 긴 조합논리 경로를 두 개의 경로로 분할
+    <img width="620" height="168" alt="image" src="https://github.com/user-attachments/assets/4480ab4f-be01-4f8a-97d5-cc238db78333" />
+* **Sender FIFO의 POP 시점 오류**
+  - 문제: Sender에서 데이터 보내는 타이밍이 한 cycle 밀림
+  - 원인: POP 시점이 FIFO로 데이터가 들어올 때가 아니라 다음 데이터가 들어올 때
+  - 해결: FIFO로 데이터가 들어오는 시점(FIFO !empty & Tx ready & !valid 조건이 충족됐을 때)에 POP 신호 발생
+  <img width="477" height="240" alt="image" src="https://github.com/user-attachments/assets/b6bacbc7-ad0e-4894-b8a7-7b6ee5c6a3f2" />
+
 
 ---
 
